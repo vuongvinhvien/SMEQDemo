@@ -1,5 +1,3 @@
-# easyPieChart
-
 > Lightweight plugin to render simple, animated and retina optimized pie charts
 
 ![Version](http://img.shields.io/version/2.1.6.png?color=green)
