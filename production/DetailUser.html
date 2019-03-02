@@ -298,28 +298,24 @@
 
                                     <div class="col-md-8 col-sm-8 col-xs-12">
                                         <label for="fullname">Full Name * :</label>
-                                        <input type="text" id="fullname" class="form-control" name="fullname" required />
+                                        <input type="text" id="fullname" class="form-control" name="fullname" required disabled />
 
                                         <label for="email">Email * :
 
                                         </label>
-                                        <input type="email" id="email" class="form-control" name="email" data-parsley-trigger="change" required />
-                                        <label for="email">Password * :
-                                        </label>
-                                        <input type="password" name="password" id="password" class="form-control" name="email" data-parsley-trigger="change" required />
-                                        <label for="email">Repeat Password * :
-                                        </label>
-                                        <input type="password" name="password2" id="" data-validate-linked="password" class="form-control" name="email" data-parsley-trigger="change" required />
+                                        <input type="email" id="email" class="form-control" name="email" data-parsley-trigger="change" required disabled />
+                                        <label for="fullname">Birthday * :</label>
+                                        <input type="date" id="fullname" class="form-control" name="fullname" required disabled />
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-12 form-group">
                                         <h4>Phân quyền: </h4>
                                         <p style="padding: 5px;">
-                                            <input type="checkbox" name="pq" id="hobby1" value="ski" data-parsley-mincheck="2" required class="flat" />
+                                            <input type="checkbox" name="pq" id="hobby1" value="true" data-parsley-mincheck="2" required class="flat" checked disabled />
                                             <label for="hobby1">Bộ phận tiếp nhận xử lí</label>
                                             <br />
                                             <br />
 
-                                            <input type="checkbox" name="hobbies[]" id="hobby2" value="run" class="flat" />
+                                            <input type="checkbox" name="hobbies[]" id="hobby2" value="" class="flat" disabled />
                                             <label for="hobby2">Bộ phận thí nghiệm</label>
 
                                             <br />
@@ -329,7 +325,9 @@
 
                                 <br />
                                 <div class="center-block" style="text-align: center">
-                                    <button class="btn btn-dark" type="submit">Create</button>
+                                    <button class="btn btn-primary">Update</button>
+                                    <button class="btn btn-round" type="submit"><a class="glyphicon glyphicon-chevron-left"></a>Back</button>
+
                                 </div>
 
                             </form>
@@ -338,7 +336,105 @@
                         </div>
                     </div>
 
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="x_panel">
 
+                            <div class="x_content">
+
+                                <!-- modals -->
+                                <!-- Large modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+                                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                                                </button>
+                                                <h4 class="modal-title" id="myModalLabel">Cập nhật thông tin</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!-- start form for validation -->
+                                                <form id="demo-form" data-parsley-validate>
+                                                    <div class="row">
+
+
+                                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                                            <label for="fullname">Full Name * :</label>
+                                                            <input type="text" id="fullname" class="form-control" name="fullname" required disabled />
+
+                                                            <label for="email">Email * :
+
+                                                            </label>
+                                                            <input type="email" id="email" class="form-control" name="email" data-parsley-trigger="change" required disabled />
+                                                            <label for="fullname">Birthday * :</label>
+                                                            <input type="date" id="fullname" class="form-control" name="fullname" required disabled />
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4 col-xs-12 form-group">
+                                                            <h4>Phân quyền: </h4>
+                                                            <p style="padding: 5px;">
+                                                                <input type="checkbox" name="pq" id="hobby1" value="true" data-parsley-mincheck="2" required class="flat" checked disabled />
+                                                                <label for="hobby1">Bộ phận tiếp nhận xử lí</label>
+                                                                <br />
+                                                                <br />
+
+                                                                <input type="checkbox" name="hobbies[]" id="hobby2" value="" class="flat" disabled />
+                                                                <label for="hobby2">Bộ phận thí nghiệm</label>
+
+                                                                <br />
+                                                        </div>
+                                                    </div>
+
+
+                                                    <br />
+                                                    <div class="center-block" style="text-align: center">
+                                                        <button class="btn btn-primary">Update</button>
+                                                        <button class="btn btn-round" type="submit"><a class="glyphicon glyphicon-chevron-left"></a>Back</button>
+
+                                                    </div>
+
+                                                </form>
+                                                <!-- end form for validations -->
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Small modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+                                <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                                </button>
+                                                <h4 class="modal-title" id="myModalLabel2">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h4>Text in a modal</h4>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /modals -->
+                            </div>
+                        </div>
+                    </div>
                     <!-- /.modal-dialog -->
 
                 </section>
