@@ -35,8 +35,7 @@
     <!-- <script language="JavaScript" src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js" type="text/javascript"></script>
   <script language="JavaScript" src="https://cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.js" type="text/javascript"></script> -->
     <!-- css datatable -->
-    <link rel="stylesheet" type="text/css"
-        href="http://cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.css">
 
     <link rel="stylesheet" href="css/Index.css">
 
@@ -91,19 +90,57 @@
                 ['tháng 11', 321],
                 ['tháng 12', 132],
             ]);
-
+            // var data = google.visualization.arrayToDataTable([
+            //     ['Language', 'Rating'],
+            //     ['PHP', 79],
+            //     ['JavaScript', 71],
+            //     ['Swift', 68],
+            //     ['SQL', 56],
+            //     ['Java', 45],
+            //     ['Perl', 45],
+            //     ['Ruby', 35],
+            //     ['Python', 30],
+            //     ['AngularJS', 29],
+            //     ['Node.js', 28],
+            //     ['Objective-C', 19],
+            //     ['C#', 17],
+            //     ['C++', 15],
+            //     ['C', 14]
+            // ]);
             // Set chart options
             var options = {
-                'title': 'SỐ LƯỢNG GIAO DỊCH TRONG NĂM: ',
-                'width': 1100,
-                'height':900
+                title: '',
+                width: '100%',
+                height: '900px'
             };
+            // var options = {
+            //     title: 'Most Popular Programming Languages',
+            //     width: '100%',
+            //     height: '500px'
+            // };
 
             // Instantiate and draw our chart, passing in some options.
-            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
             chart.draw(data, options);
         }
     </script>
+    <style>
+        #chart_wrap {
+            position: relative;
+            /* padding-bottom: 10%; */
+            padding-top: 800px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        #piechart {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+        }
+    </style>
 </head>
 
 <body class="nav-md">
@@ -137,15 +174,13 @@
                             <h3>General</h3>
                             <ul class="nav side-menu">
 
-                                <li><a><i class="fa fa-list"></i> Khách hàng <span
-                                            class="fa fa-chevron-down"></span></a>
+                                <li><a><i class="fa fa-list"></i> Khách hàng <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="DSKH.html">Danh sách khách hàng</a></li>
                                         <li><a href="TKHM.html">Thêm khách hàng mới</a></li>
                                     </ul>
                                 </li>
-                                <li><a><i class="fa fa-edit"></i> Kiểm định hiệu chuẩn <span
-                                            class="fa fa-chevron-down"></span></a>
+                                <li><a><i class="fa fa-edit"></i> Kiểm định hiệu chuẩn <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="GMTBKH.html">Giấy mới tạo bởi khách hàng</a></li>
                                         <li><a href="GNDK.html">Giấy nhận đăng ký</a></li>
@@ -154,8 +189,7 @@
                                         <li><a href="GDKHT.html">Giấy đăng ký hoàn tất</a></li>
                                     </ul>
                                 </li>
-                                <li><a><i class="fa fa-bar-chart-o"></i> Báo cáo <span
-                                            class="fa fa-chevron-down"></span></a>
+                                <li><a><i class="fa fa-bar-chart-o"></i> Báo cáo <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="SLGD.html">Số lượng giao dịch</a></li>
                                         <li><a href="DT.html">Doanh thu</a></li>
@@ -164,8 +198,7 @@
                                     </ul>
                                 </li>
 
-                                <li><a><i class="fa fa-refresh"></i>Danh mục hệ thống <span
-                                            class="fa fa-chevron-down"></span></a>
+                                <li><a><i class="fa fa-refresh"></i>Danh mục hệ thống <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="DMPTD.html">Danh mục phương tiện đo</a></li>
                                         <li><a href="DMPPT.html">Danh mục phương pháp thử</a></li>
@@ -179,8 +212,7 @@
                             <h3>Admin</h3>
                             <ul class="nav side-menu">
 
-                                <li><a><i class="fa fa-sitemap"></i> Quản lý User <span
-                                            class="fa fa-chevron-down"></span></a>
+                                <li><a><i class="fa fa-sitemap"></i> Quản lý User <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li>
                                             <a href="DSUser.html">Danh sách User</a>
@@ -223,8 +255,7 @@
 
                         <ul class="nav navbar-nav navbar-right">
                             <li class="">
-                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     <img src="images/img.jpg" alt="">John Doe
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
@@ -242,8 +273,7 @@
                             </li>
 
                             <li role="presentation" class="dropdown">
-                                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                                     <i class="fa fa-envelope-o"></i>
                                     <span class="badge bg-green">6</span>
                                 </a>
@@ -319,15 +349,16 @@
             <!-- page content -->
             <div class="right_col" role="main">
                 <!-- top tiles -->
-                <section class="content container-fluid">
+                <section class="content container-fluid row">
 
                     <!--------------------------
     | Your Page Content Here |
     -------------------------->
 
                     <!--  chart -->
+
                     <!--Div that will hold the pie chart-->
-                    <div id="chart_div" style="padding-top: 7.5%"></div>
+                    <div class="col-md-12 col-lg-12 col-sm-12 container-fluid" id="piechart" style="padding-top: 5%;padding-right: 0%; max-width: 100%;"></div>
                     <!-- /chart -->
 
                     <!-- /.modal-dialog -->
