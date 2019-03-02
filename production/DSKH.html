@@ -28,7 +28,7 @@
   <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
   <!-- Custom Theme Style -->
-  <link href="../build/css/custom.min.css" rel="stylesheet">
+  
 
   <script src="../vendors/jquery/dist/jquery.min.js"></script>
 
@@ -39,18 +39,22 @@
 
   <link rel="stylesheet" href="css/Index.css">
 
+  <link href="../build/css/custom.min.css" type="text/css" rel="stylesheet">
+
   <style>
-      #edit .modal-dialog{
-          width: auto;
-          max-width: 100%;
-      }
-      a {
-          color: white;
-      }
-      a:hover{
-          color: black;
-          /* background-color: white; */
-      }
+    #edit .modal-dialog {
+      width: auto;
+      max-width: 100%;
+    }
+
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: black;
+      /* background-color: white; */
+    }
   </style>
 
 </head>
@@ -89,7 +93,7 @@
                 <li><a><i class="fa fa-list"></i> Khách hàng <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
                     <li><a href="DSKH.html">Danh sách khách hàng</a></li>
-                    
+
                   </ul>
                 </li>
                 <li><a><i class="fa fa-edit"></i> Kiểm định hiệu chuẩn <span class="fa fa-chevron-down"></span></a>
@@ -109,7 +113,7 @@
                     <li><a href="GDKH.html">Giấy đăng ký hủy</a></li>
                   </ul>
                 </li>
-                
+
                 <li><a><i class="fa fa-refresh"></i>Danh mục hệ thống <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
                     <li><a href="DMPTD.html">Danh mục phương tiện đo</a></li>
@@ -123,7 +127,7 @@
             <div class="menu_section">
               <h3>Admin</h3>
               <ul class="nav side-menu">
-                
+
                 <li><a><i class="fa fa-sitemap"></i> Quản lý User <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
                     <li>
@@ -167,8 +171,7 @@
 
             <ul class="nav navbar-nav navbar-right">
               <li class="">
-                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
-                  aria-expanded="false">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                   <img src="images/img.jpg" alt="">John Doe
                   <span class=" fa fa-angle-down"></span>
                 </a>
@@ -260,444 +263,383 @@
         <!-- top tiles -->
         <section class="content container-fluid">
 
-            <!--------------------------
+          <!--------------------------
     | Your Page Content Here |
     -------------------------->
 
 
-            <div class="container-fluid">
-                <div class="row">
-                    <h1 class="text-center" style="font-family: initial">DANH SÁCH KHÁCH HÀNG</h1>
-                </div>
-
-                <div class="row">
-                    <button class="btn btn-primary btn-lg pull-right"><span class="glyphicon glyphicon-plus "></span> Thêm </button>
-                    <div class="col-md-12">
-
-                        <!-- <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%"> -->
-                        <table id="datatable" class="table table-hover table-responsive display compact" cellspacing="0" width="100%">
-                            <thead>
-                                <tr>
-
-                                    <th>Tên đơn vị</th>
-                                    <th>Tên người đại diện</th>
-                                    <th>mã số thuế</th>
-                                    <th>Ngày tạo</th>
-                                    <th>Số điện thoại</th>
-                                    <th>Chi tiết </th>
-                                    <th>Cập nhật</th>
-
-                                </tr>
-                            </thead>
-
-                            <tfoot>
-                                <tr>
-
-                                    <th>Tên đơn vị</th>
-                                    <th>Tên người đại diện</th>
-                                    <th>mã số thuế</th>
-                                    <th>Ngày tạo</th>
-                                    <th>Số điện thoại</th>
-                                    <th>Chi tiết</th>
-                                    <th>Cập nhật</th>
-
-                                </tr>
-                            </tfoot>
-
-                            <tbody>
-                                <tr>
-
-                                    <td>Suftrix BOA</td>
-                                    <td>Eladin</td>
-                                    <td>63434341</td>
-                                    <td>2018/10/25</td>
-                                    <td>0123456789</td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-info btn-xs"
-                                                data-title="Detail" data-toggle="modal" data-target="#Detail"><span
-                                                    class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
-                                                    style="font-optical-sizing:initial">
-                                                    Xem chi tiết</a></button></p>
-                                    </td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
-                                                data-title="Edit" data-toggle="modal" data-target="#edit"><span
-                                                    class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>System Cooponic </td>
-                                    <td>Colodia john</td>
-                                    <td>63438493824</td>
-                                    <td>2017/10/25</td>
-                                    <td>0123456789</td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-info btn-xs"
-                                                data-title="Detail" data-toggle="modal" data-target="#Detail"><span
-                                                    class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
-                                                    style="font-optical-sizing:initial">
-                                                    Xem chi tiết</a></button></p>
-                                    </td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
-                                                data-title="Edit" data-toggle="modal" data-target="#edit"><span
-                                                    class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>APAC Supplier</td>
-                                    <td>Ventu Jame</td>
-                                    <td>53</td>
-                                    <td>2018/10/25</td>
-                                    <td>0123456789</td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-info btn-xs"
-                                                data-title="Detail" data-toggle="modal" data-target="#Detail"><span
-                                                    class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
-                                                    style="font-optical-sizing:initial">
-                                                    Xem chi tiết</a></button></p>
-                                    </td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
-                                                data-title="Edit" data-toggle="modal" data-target="#edit"><span
-                                                    class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>Company Game Architect</td>
-                                    <td>Trần Văn A</td>
-                                    <td>6222444423344</td>
-                                    <td>2018/10/25</td>
-                                    <td>0328362826</td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-info btn-xs"
-                                                data-title="Detail" data-toggle="modal" data-target="#Detail"><span
-                                                    class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
-                                                    style="font-optical-sizing:initial">
-                                                    Xem chi tiết</a></button></p>
-                                    </td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
-                                                data-title="Edit" data-toggle="modal" data-target="#edit"><span
-                                                    class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>STA Architect</td>
-                                    <td>Ngo văn B</td>
-                                    <td>56789233</td>
-                                    <td>2018/10/25</td>
-                                    <td>0123456789</td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-info btn-xs"
-                                                data-title="Detail" data-toggle="modal" data-target="#Detail"><span
-                                                    class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
-                                                    style="font-optical-sizing:initial">
-                                                    Xem chi tiết</a></button></p>
-                                    </td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
-                                                data-title="Edit" data-toggle="modal" data-target="#edit"><span
-                                                    class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>System Barca</td>
-                                    <td>Carry</td>
-                                    <td>61</td>
-                                    <td>2018/10/25</td>
-                                    <td>0123456789</td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-info btn-xs"
-                                                data-title="Detail" data-toggle="modal" data-target="#Detail"><span
-                                                    class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
-                                                    style="font-optical-sizing:initial">
-                                                    Xem chi tiết</a></button></p>
-                                    </td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
-                                                data-title="Edit" data-toggle="modal" data-target="#edit"><span
-                                                    class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>System LOCOBA</td>
-                                    <td>Mactada Kalada</td>
-                                    <td>32345641</td>
-                                    <td>2018/1/25</td>
-                                    <td>0123456789</td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-info btn-xs"
-                                                data-title="Detail" data-toggle="modal" data-target="#Detail"><span
-                                                    class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
-                                                    style="font-optical-sizing:initial">
-                                                    Xem chi tiết</a></button></p>
-                                    </td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
-                                                data-title="Edit" data-toggle="modal" data-target="#edit"><span
-                                                    class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>PC Caroy Architect</td>
-                                    <td>Edison</td>
-                                    <td>6434341</td>
-                                    <td>2018/10/5</td>
-                                    <td>012346789</td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-info btn-xs"
-                                                data-title="Detail" data-toggle="modal" data-target="#Detail"><span
-                                                    class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
-                                                    style="font-optical-sizing:initial">
-                                                    Xem chi tiết</a></button></p>
-                                    </td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
-                                                data-title="Edit" data-toggle="modal" data-target="#edit"><span
-                                                    class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>Bara TNHH 1 TV </td>
-                                    <td>Baroycy</td>
-                                    <td>67232345</td>
-                                    <td>2018/10/25</td>
-                                    <td>0128756789</td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-info btn-xs"
-                                                data-title="Detail" data-toggle="modal" data-target="#Detail"><span
-                                                    class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
-                                                    style="font-optical-sizing:initial">
-                                                    Xem chi tiết</a></button></p>
-                                    </td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
-                                                data-title="Edit" data-toggle="modal" data-target="#edit"><span
-                                                    class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>Sys Cyty Coly</td>
-                                    <td>Baro Citon</td>
-                                    <td>6098765</td>
-                                    <td>2018/10/25</td>
-                                    <td>0123456789</td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-info btn-xs"
-                                                data-title="Detail" data-toggle="modal" data-target="#Detail"><span
-                                                    class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
-                                                    style="font-optical-sizing:initial">
-                                                    Xem chi tiết</a></button></p>
-                                    </td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
-                                                data-title="Edit" data-toggle="modal" data-target="#edit"><span
-                                                    class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>Qua BIBI</td>
-                                    <td>Nhon A</td>
-                                    <td>61</td>
-                                    <td>2018/10/25</td>
-                                    <td>0123456789</td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-info btn-xs"
-                                                data-title="Detail" data-toggle="modal" data-target="#Detail"><span
-                                                    class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
-                                                    style="font-optical-sizing:initial">
-                                                    Xem chi tiết</a></button></p>
-                                    </td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
-                                                data-title="Edit" data-toggle="modal" data-target="#edit"><span
-                                                    class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>System Solution</td>
-                                    <td>Taylor B</td>
-                                    <td>76546543</td>
-                                    <td>2018/10/5</td>
-                                    <td>0123456789</td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-info btn-xs"
-                                                data-title="Detail" data-toggle="modal" data-target="#Detail"><span
-                                                    class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
-                                                    style="font-optical-sizing:initial">
-                                                    Xem chi tiết</a></button></p>
-                                    </td>
-                                    <td>
-                                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
-                                                data-title="Edit" data-toggle="modal" data-target="#edit"><span
-                                                    class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
-                                    </td>
-
-                                </tr>
-
-
-
-                            </tbody>
-                        </table>
-
-
-                    </div>
-                </div>
+          <div class="container-fluid">
+            <div class="row">
+              <h1 class="text-center" style="font-family: initial">DANH SÁCH KHÁCH HÀNG</h1>
             </div>
 
-            <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="container text-center">
-                        <div class="row">
-                            <fieldset>
-                                <legend>
-                                    <h2>CẬP NHẬT THÔNG TIN</h2>
-                                </legend>
-                                <div class="text-center">
-                                    <hr>
-                                    <div class="col-md-12 container">
-                                        <form class="form-horizontal text-left " action="/action_page.cshtml">
+            <div class="row">
+              <button class="btn btn-primary btn-lg pull-right"><span class="glyphicon glyphicon-plus "></span> Thêm </button>
+              <div class="col-md-12">
+
+                <!-- <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%"> -->
+                <table id="datatable" class="table table-hover table-responsive display compact" cellspacing="0" width="100%">
+                  <thead>
+                    <tr>
+
+                      <th>Tên đơn vị</th>
+                      <th>Tên người đại diện</th>
+                      <th>mã số thuế</th>
+                      <th>Ngày tạo</th>
+                      <th>Số điện thoại</th>
+                      <th>Chi tiết </th>
+                      <th>Cập nhật</th>
+
+                    </tr>
+                  </thead>
+
+                  <tfoot>
+                    <tr>
+
+                      <th>Tên đơn vị</th>
+                      <th>Tên người đại diện</th>
+                      <th>mã số thuế</th>
+                      <th>Ngày tạo</th>
+                      <th>Số điện thoại</th>
+                      <th>Chi tiết</th>
+                      <th>Cập nhật</th>
+
+                    </tr>
+                  </tfoot>
+
+                  <tbody>
+                    <tr>
+
+                      <td>Suftrix BOA</td>
+                      <td>Eladin</td>
+                      <td>63434341</td>
+                      <td>2018/10/25</td>
+                      <td>0123456789</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-success btn-xs" data-title="Detail" data-toggle="modal" data-target="#Detail"><span class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html"
+                              style="font-optical-sizing:initial">
+                              Xem chi tiết</a></button></p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td>System Cooponic </td>
+                      <td>Colodia john</td>
+                      <td>63438493824</td>
+                      <td>2017/10/25</td>
+                      <td>0123456789</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-success btn-xs" data-title="Detail" data-toggle="modal" data-target="#Detail"><span class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html" style="font-optical-sizing:initial">
+                              Xem chi tiết</a></button></p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td>APAC Supplier</td>
+                      <td>Ventu Jame</td>
+                      <td>53</td>
+                      <td>2018/10/25</td>
+                      <td>0123456789</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-success btn-xs" data-title="Detail" data-toggle="modal" data-target="#Detail"><span class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html" style="font-optical-sizing:initial">
+                              Xem chi tiết</a></button></p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td>Company Game Architect</td>
+                      <td>Trần Văn A</td>
+                      <td>6222444423344</td>
+                      <td>2018/10/25</td>
+                      <td>0328362826</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-success btn-xs" data-title="Detail" data-toggle="modal" data-target="#Detail"><span class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html" style="font-optical-sizing:initial">
+                              Xem chi tiết</a></button></p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td>STA Architect</td>
+                      <td>Ngo văn B</td>
+                      <td>56789233</td>
+                      <td>2018/10/25</td>
+                      <td>0123456789</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-success btn-xs" data-title="Detail" data-toggle="modal" data-target="#Detail"><span class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html" style="font-optical-sizing:initial">
+                              Xem chi tiết</a></button></p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td>System Barca</td>
+                      <td>Carry</td>
+                      <td>61</td>
+                      <td>2018/10/25</td>
+                      <td>0123456789</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-success btn-xs" data-title="Detail" data-toggle="modal" data-target="#Detail"><span class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html" style="font-optical-sizing:initial">
+                              Xem chi tiết</a></button></p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td>System LOCOBA</td>
+                      <td>Mactada Kalada</td>
+                      <td>32345641</td>
+                      <td>2018/1/25</td>
+                      <td>0123456789</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-success btn-xs" data-title="Detail" data-toggle="modal" data-target="#Detail"><span class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html" style="font-optical-sizing:initial">
+                              Xem chi tiết</a></button></p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td>PC Caroy Architect</td>
+                      <td>Edison</td>
+                      <td>6434341</td>
+                      <td>2018/10/5</td>
+                      <td>012346789</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-success btn-xs" data-title="Detail" data-toggle="modal" data-target="#Detail"><span class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html" style="font-optical-sizing:initial">
+                              Xem chi tiết</a></button></p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td>Bara TNHH 1 TV </td>
+                      <td>Baroycy</td>
+                      <td>67232345</td>
+                      <td>2018/10/25</td>
+                      <td>0128756789</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-success btn-xs" data-title="Detail" data-toggle="modal" data-target="#Detail"><span class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html" style="font-optical-sizing:initial">
+                              Xem chi tiết</a></button></p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td>Sys Cyty Coly</td>
+                      <td>Baro Citon</td>
+                      <td>6098765</td>
+                      <td>2018/10/25</td>
+                      <td>0123456789</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-success btn-xs" data-title="Detail" data-toggle="modal" data-target="#Detail"><span class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html" style="font-optical-sizing:initial">
+                              Xem chi tiết</a></button></p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td>Qua BIBI</td>
+                      <td>Nhon A</td>
+                      <td>61</td>
+                      <td>2018/10/25</td>
+                      <td>0123456789</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-success btn-xs" data-title="Detail" data-toggle="modal" data-target="#Detail"><span class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html" style="font-optical-sizing:initial">
+                              Xem chi tiết</a></button></p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td>System Solution</td>
+                      <td>Taylor B</td>
+                      <td>76546543</td>
+                      <td>2018/10/5</td>
+                      <td>0123456789</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Detail"><button class="btn btn-success btn-xs" data-title="Detail" data-toggle="modal" data-target="#Detail"><span class="glyphicon glyphicon-zoom-in"></span><a href="XemChiTiet.html" style="font-optical-sizing:initial">
+                              Xem chi tiết</a></button></p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span> Cập nhật</button></p>
+                      </td>
+
+                    </tr>
 
 
-                                            <div class="row form-group row ">
-                                                <div class="col-md-4 row">
-                                                    <label class="control-label col-md-4" for="">Mã số thuế:</label>
-                                                    <div class="col-md-8">
-                                                        <input type="" class="form-control" id="" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-8 row">
-                                                    <label class="control-label col-md-2 " for="">Tên đơn vị:</label>
-                                                    <div class="col-md-8">
-                                                        <input type="" class="form-control" id="" placeholder="">
-                                                    </div>
-                                                </div>
 
-                                            </div>
-
-                                            <div class="form-group row">
+                  </tbody>
+                </table>
 
 
-                                                <div class="col-md-4 row">
-                                                    <label class="control-label col-md-4" for="">Địa chỉ:</label>
-                                                    <div class="col-md-8">
-                                                        <input type="" class="form-control" id="" placeholder="">
-                                                    </div>
-                                                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="container text-center">
+                <div class="row">
+                  <fieldset>
+                    <legend>
+                      <h2>CẬP NHẬT THÔNG TIN</h2>
+                    </legend>
+                    <div class="text-center">
+                      <hr>
+                      <div class="col-md-12 container">
+                        <form class="form-horizontal text-left " action="/action_page.cshtml">
 
 
-                                                <div class="col-sm-4 row">
-                                                    <label class="control-label col-xm-6 col-sm-offset-2" for="">Tỉnh/thành:</label>
-                                                    <select class="Province col-xm-6" style="width:150px;">
-                                                        <option> Chọn tỉnh</option>
-                                                        <option>tp.HCM</option>
-                                                        <option>Đà nẵng</option>
-                                                        <option>Vũng Tàu</option>
-                                                        <option>Cần Thơ</option>
-                                                        <option>Khánh Hòa</option>
-                                                        <option>...</option>
-                                                    </select>
-                                                </div>
-                                                <!-- <input type="" class="form-control" id="" placeholder=""> -->
-                                                <div class="col-sm-4 row">
-                                                    <label class="control-label col-xm-6 col-sm-offset-1" for="">Quận/huyện:</label>
-                                                    <select class="District col-xm-6" style="width:150px;">
-                                                        <option> Chọn huyện </option>
-                                                        <option>Quận 1</option>
-                                                        <option>Thủ Đức</option>
-                                                        <option>Quận 5</option>
-                                                        <option>Tuy Đức</option>
-                                                        <option>Hiệp Bình</option>
-                                                        <option>...</option>
-                                                    </select>
-                                                </div>
+                          <div class="row form-group row ">
+                            <div class="col-md-4 row">
+                              <label class="control-label col-md-4" for="">Mã số thuế:</label>
+                              <div class="col-md-8">
+                                <input type="" class="form-control" id="" placeholder="">
+                              </div>
+                            </div>
+                            <div class="col-md-8 row">
+                              <label class="control-label col-md-2 " for="">Tên đơn vị:</label>
+                              <div class="col-md-8">
+                                <input type="" class="form-control" id="" placeholder="">
+                              </div>
+                            </div>
 
-                                                <!-- <input type="" class="form-control" id="" placeholder=""> -->
+                          </div>
 
-                                            </div>
-
-                                            <div class="row form-group row ">
-                                                <div class="col-md-4 row">
-                                                    <label class="control-label col-md-4" for="">Số điện thoại:</label>
-                                                    <div class="col-md-8">
-                                                        <input type="number" class="form-control " id=""
-                                                            placeholder="" maxlength="12">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 row">
-                                                    <label class="control-label col-md-4" for="">Fax:</label>
-                                                    <div class="col-md-8">
-                                                        <input type="" class="form-control" id="" placeholder="">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row form-group row ">
-                                                <div class="col-md-4 row">
-                                                    <label class="control-label col-md-4" for="">Họ và Tên:</label>
-                                                    <div class="col-md-8">
-                                                        <input type="" class="form-control" id="" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 row">
-                                                    <label class="control-label col-md-4" for="">Chức vụ:</label>
-                                                    <div class="col-md-8">
-                                                        <input type="" class="form-control" id="" placeholder="đại diện">
-                                                    </div>
-                                                </div>
-
-                                            </div>
+                          <div class="form-group row">
 
 
+                            <div class="col-md-4 row">
+                              <label class="control-label col-md-4" for="">Địa chỉ:</label>
+                              <div class="col-md-8">
+                                <input type="" class="form-control" id="" placeholder="">
+                              </div>
+                            </div>
 
 
-                                    </div>
-                                    <br>
-                                    <hr>
-                                    <button type="submit" class="btn btn-primary center-block">Cập nhật</button>
-                                    </form>
+                            <div class="col-sm-4 row">
+                              <label class="control-label col-xm-6 col-sm-offset-2" for="">Tỉnh/thành:</label>
+                              <select class="Province col-xm-6" style="width:150px;">
+                                <option> Chọn tỉnh</option>
+                                <option>tp.HCM</option>
+                                <option>Đà nẵng</option>
+                                <option>Vũng Tàu</option>
+                                <option>Cần Thơ</option>
+                                <option>Khánh Hòa</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <!-- <input type="" class="form-control" id="" placeholder=""> -->
+                            <div class="col-sm-4 row">
+                              <label class="control-label col-xm-6 col-sm-offset-1" for="">Quận/huyện:</label>
+                              <select class="District col-xm-6" style="width:150px;">
+                                <option> Chọn huyện </option>
+                                <option>Quận 1</option>
+                                <option>Thủ Đức</option>
+                                <option>Quận 5</option>
+                                <option>Tuy Đức</option>
+                                <option>Hiệp Bình</option>
+                                <option>...</option>
+                              </select>
+                            </div>
 
-                                </div>
-                            </fieldset>
+                            <!-- <input type="" class="form-control" id="" placeholder=""> -->
 
-                        </div>
+                          </div>
+
+                          <div class="row form-group row ">
+                            <div class="col-md-4 row">
+                              <label class="control-label col-md-4" for="">Số điện thoại:</label>
+                              <div class="col-md-8">
+                                <input type="number" class="form-control " id="" placeholder="" maxlength="12">
+                              </div>
+                            </div>
+                            <div class="col-md-4 row">
+                              <label class="control-label col-md-4" for="">Fax:</label>
+                              <div class="col-md-8">
+                                <input type="" class="form-control" id="" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row form-group row ">
+                            <div class="col-md-4 row">
+                              <label class="control-label col-md-4" for="">Họ và Tên:</label>
+                              <div class="col-md-8">
+                                <input type="" class="form-control" id="" placeholder="">
+                              </div>
+                            </div>
+                            <div class="col-md-4 row">
+                              <label class="control-label col-md-4" for="">Chức vụ:</label>
+                              <div class="col-md-8">
+                                <input type="" class="form-control" id="" placeholder="đại diện">
+                              </div>
+                            </div>
+
+                          </div>
 
 
+
+
+                      </div>
+                      <br>
+                      <hr>
+                      <button type="submit" class="btn btn-primary center-block">Cập nhật</button>
+                      </form>
 
                     </div>
+                  </fieldset>
 
                 </div>
-                <!-- /.modal-content -->
+
+
+
+              </div>
+
             </div>
-            <!-- /.modal-dialog -->
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
 
         </section>
       </div>
       <!-- /page content -->
-
       <!-- footer content -->
       <footer>
         <div class="pull-right">
@@ -710,13 +652,13 @@
   </div>
 
   <!-- jQuery -->
-  
+
   <!-- Bootstrap -->
   <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
   <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-  
+
   <!-- FastClick -->
   <script src="../vendors/fastclick/lib/fastclick.js"></script>
   <!-- NProgress -->
@@ -755,18 +697,18 @@
   <script src="../build/js/custom.min.js"></script>
 
   <script>
-      $(document).ready(function () {
-          $('#datatable').dataTable();
+    $(document).ready(function () {
+      $('#datatable').dataTable();
 
-          $("[data-toggle=tooltip]").tooltip();
+      $("[data-toggle=tooltip]").tooltip();
 
-      });
-      $(document).ready(function () {
-          $('#datatable2').dataTable();
+    });
+    $(document).ready(function () {
+      $('#datatable2').dataTable();
 
-          $("[data-toggle=tooltip]").tooltip();
+      $("[data-toggle=tooltip]").tooltip();
 
-      });
+    });
   </script>
 
 </body>
