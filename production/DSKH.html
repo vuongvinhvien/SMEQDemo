@@ -46,6 +46,11 @@
       width: auto;
       max-width: 100%;
     }
+    #add .modal-dialog {
+      width: auto;
+      max-width: 100%;
+    }
+
 
     a {
       color: white;
@@ -274,7 +279,8 @@
             </div>
 
             <div class="row">
-              <button class="btn btn-primary btn-lg pull-right"><span class="glyphicon glyphicon-plus "></span> Thêm </button>
+              <button class="btn btn-primary btn-lg pull-right" data-target="#add" data-title="Edit" data-toggle="modal"><span class="glyphicon glyphicon-plus "></span> Thêm </button>
+              
               <div class="col-md-12">
 
                 <!-- <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%"> -->
@@ -511,7 +517,7 @@
               </div>
             </div>
           </div>
-
+          <!-- /.modal-dialog -->
           <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
             <div class="modal-dialog">
               <div class="container text-center">
@@ -530,13 +536,13 @@
                             <div class="col-md-4 row">
                               <label class="control-label col-md-4" for="">Mã số thuế:</label>
                               <div class="col-md-8">
-                                <input type="" class="form-control" id="" placeholder="">
+                                <input type="" class="form-control" id="" placeholder="" disabled>
                               </div>
                             </div>
                             <div class="col-md-8 row">
                               <label class="control-label col-md-2 " for="">Tên đơn vị:</label>
                               <div class="col-md-8">
-                                <input type="" class="form-control" id="" placeholder="">
+                                <input type="" class="form-control" id="" placeholder="" disabled>
                               </div>
                             </div>
 
@@ -636,6 +642,131 @@
             <!-- /.modal-content -->
           </div>
           <!-- /.modal-dialog -->
+          <!-- /.modal-dialog  thêm khach hàng-->
+          <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="container text-center">
+                  <div class="row">
+                    <fieldset>
+                      <legend>
+                        <h2>THÊM KHÁCH HÀNG </h2>
+                      </legend>
+                      <div class="text-center">
+                        <hr>
+                        <div class="col-md-12 container">
+                          <form class="form-horizontal text-left " action="/action_page.cshtml">
+  
+  
+                            <div class="row form-group row ">
+                              <div class="col-md-4 row">
+                                <label class="control-label col-md-4" for="">Mã số thuế:</label>
+                                <div class="col-md-8">
+                                  <input type="" class="form-control" id="" placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-8 row">
+                                <label class="control-label col-md-2 " for="">Tên đơn vị:</label>
+                                <div class="col-md-8">
+                                  <input type="" class="form-control" id="" placeholder="">
+                                </div>
+                              </div>
+  
+                            </div>
+  
+                            <div class="form-group row">
+  
+  
+                              <div class="col-md-4 row">
+                                <label class="control-label col-md-4" for="">Địa chỉ:</label>
+                                <div class="col-md-8">
+                                  <input type="" class="form-control" id="" placeholder="">
+                                </div>
+                              </div>
+  
+  
+                              <div class="col-sm-4 row">
+                                <label class="control-label col-xm-6 col-sm-offset-2" for="">Tỉnh/thành:</label>
+                                <select class="Province col-xm-6" style="width:150px;">
+                                  <option> Chọn tỉnh</option>
+                                  <option>tp.HCM</option>
+                                  <option>Đà nẵng</option>
+                                  <option>Vũng Tàu</option>
+                                  <option>Cần Thơ</option>
+                                  <option>Khánh Hòa</option>
+                                  <option>...</option>
+                                </select>
+                              </div>
+                              <!-- <input type="" class="form-control" id="" placeholder=""> -->
+                              <div class="col-sm-4 row">
+                                <label class="control-label col-xm-6 col-sm-offset-1" for="">Quận/huyện:</label>
+                                <select class="District col-xm-6" style="width:150px;">
+                                  <option> Chọn huyện </option>
+                                  <option>Quận 1</option>
+                                  <option>Thủ Đức</option>
+                                  <option>Quận 5</option>
+                                  <option>Tuy Đức</option>
+                                  <option>Hiệp Bình</option>
+                                  <option>...</option>
+                                </select>
+                              </div>
+  
+                              <!-- <input type="" class="form-control" id="" placeholder=""> -->
+  
+                            </div>
+  
+                            <div class="row form-group row ">
+                              <div class="col-md-4 row">
+                                <label class="control-label col-md-4" for="">Số điện thoại:</label>
+                                <div class="col-md-8">
+                                  <input type="number" class="form-control " id="" placeholder="" maxlength="12">
+                                </div>
+                              </div>
+                              <div class="col-md-4 row">
+                                <label class="control-label col-md-4" for="">Fax:</label>
+                                <div class="col-md-8">
+                                  <input type="" class="form-control" id="" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+  
+                            <div class="row form-group row ">
+                              <div class="col-md-4 row">
+                                <label class="control-label col-md-4" for="">Họ và Tên:</label>
+                                <div class="col-md-8">
+                                  <input type="" class="form-control" id="" placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-4 row">
+                                <label class="control-label col-md-4" for="">Chức vụ:</label>
+                                <div class="col-md-8">
+                                  <input type="" class="form-control" id="" placeholder="đại diện">
+                                </div>
+                              </div>
+  
+                            </div>
+  
+  
+  
+  
+                        </div>
+                        <br>
+                        <hr>
+                        <button type="submit" class="btn btn-primary center-block">Cập nhật</button>
+                        </form>
+  
+                      </div>
+                    </fieldset>
+  
+                  </div>
+  
+  
+  
+                </div>
+  
+              </div>
+              <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
 
         </section>
       </div>
